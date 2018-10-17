@@ -84,7 +84,7 @@
 
                 <div class="align-center">
                     <form method="post">
-                        <label>Ingrese hechos...</label> 
+                        <label style="color:black;">Ingrese hechos...</label><br>
                        <input type="text" name="search" id="search" class="form-control">
                     </form>
                 </div>

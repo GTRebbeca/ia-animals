@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(['prefix' => 'search'], function(){
+
+	Route::post('index', [
+			'uses'	=>	'search@index',
+			'as'	=>	'index'
+		]
+	);
+	Route::post('save', [
+			'uses'	=>	'search@save',
+			'as'	=>	'save'
+		]
+	);
+	Route::post('messenger', [
+			'uses'	=>	'WsSend@messenger',
+			'as'	=>	'messenger'
+		]
+	);
+});

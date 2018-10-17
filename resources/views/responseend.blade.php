@@ -17,10 +17,12 @@
                 </div>
 
                 <div align="center">
-                    <form method="post" action="{{ url('search/index') }}">
-                        <label style="color:black;">Ingrese hechos... (separe con comas)</label><br/>
-                       <input type="text" name="search" id="search" class="form-control"><br/>
-                       <input type="submit" name="submit" value="Buscar">
+                    <form method="post" action="{{ url('search/save') }}">
+                        <label style="color:black;">Respuesta:</label><br/>
+                          Se ha guardado exitosamente
+                           <br/>
+                            <a href="{{ url() }}">Volver</a>
+
                     </form>
                 </div>
 

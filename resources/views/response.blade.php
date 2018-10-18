@@ -24,7 +24,7 @@
                            No tenemos ninguna de estas caracteristicas resgistradas, ¿podría indicarnos a que tipo pertenece?
                            <br/>
                            <input type="text" name="type" class="form-control"><br>
-                           <input type="hidden" name="cars" value="{{ $car }}">
+                           <input type="hidden" name="cars" value="">
                            <input type="submit" value="guardar">
                           <a href="{{ url() }}">Volver</a>
                         @endif   

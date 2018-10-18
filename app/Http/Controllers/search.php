@@ -36,8 +36,7 @@ class search extends Controller
 
 			return view('response',[
 				'res' => $response,
-				'car' => $search,
-				'coin' => $coincidencias	
+				'car' => $search
 			]);	
 		}
 		public function save(Request $request){

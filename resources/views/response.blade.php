@@ -17,6 +17,7 @@
                 </div>
 
                 <div align="center">
+                    <!--Aquí enviamos el formulario para guardar nuevas caracteristicas-->
                     <form method="post" action="{{ url('search/save') }}">
                         <label style="color:black;">Respuesta:</label><br/>
                         @if($res == 'nel')
@@ -25,7 +26,7 @@
                            <input type="text" name="type" class="form-control"><br>
                            <input type="hidden" name="cars" value="{{ $car }}">
                            <input type="submit" value="guardar">
-                              <a href="{{ url() }}">Volver</a>
+                          <a href="{{ url() }}">Volver</a>
                         @endif   
                         @if($res == 'ok')
                         Coincidencias

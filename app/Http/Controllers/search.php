@@ -70,7 +70,7 @@ class search extends Controller
 		 public function SearchString (Request $request)
       {   
         if($request->search != null){
-          $search = palabras::ilike($request->search);
+          $search = palabras::whereRaw("UPPER('palabra') LIKE '%'". strtoupper($request->search)."'%'");
           
           return response()->json($search);
               }

@@ -27,9 +27,9 @@ Route::group(['prefix' => 'search'], function(){
 		]
 	);
 
-	Route::post('String', [
+	Route::post('SearchString', [
 			'uses'	=>	'search@SearchString',
-			'as'	=>	'String'
+			'as'	=>	'SearchString'
 		]
 	);
 });

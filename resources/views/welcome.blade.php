@@ -25,7 +25,7 @@
                 <script type="text/javascript">
                     
                     $("#sea").on("keyup", function(e) {
-                                       $.ajaxSetup({
+                                   $.ajaxSetup({
                                         headers: {
                                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                                         }
@@ -33,7 +33,7 @@
                                  var sea = document.getElementById('sea').value;
                                            $.ajax({     
                                              type: "POST",                 
-                                             url: "{{ url('search/String') }}",  
+                                             url: "{{ url('search/SearchString') }}",  
                                               data: { "search" : sea.toUpperCase() }, 
                                               dataType: 'json',                
                                              success: function(data)             

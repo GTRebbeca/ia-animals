@@ -44,6 +44,7 @@
                                              {
                                              if(data.length == 0){
                                                 document.getElementById("resp").innerHTML = "No existe palabra";
+                                                document.getElementById("resp2").innerHTML = " ";
                                              }else{
                                               document.getElementById("resp").innerHTML = "Coincidencias: ";
                                              for(var i= 0; i < data.length; i++){

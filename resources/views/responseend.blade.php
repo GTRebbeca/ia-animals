@@ -21,7 +21,7 @@
                         <label style="color:black;">Respuesta:</label><br/>
                           Se ha guardado exitosamente
                            <br/>
-                            <a href="{{ url() }}">Volver</a>
+                            <a href="{{ url('') }}">Volver</a>
 
                     </form>
                 </div>

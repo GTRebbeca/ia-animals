@@ -26,9 +26,10 @@ Route::group(['prefix' => 'search'], function(){
 			'as'	=>	'save'
 		]
 	);
-	Route::post('messenger', [
-			'uses'	=>	'WsSend@messenger',
-			'as'	=>	'messenger'
+
+	Route::post('String', [
+			'uses'	=>	'search@SearchString',
+			'as'	=>	'String'
 		]
 	);
 });

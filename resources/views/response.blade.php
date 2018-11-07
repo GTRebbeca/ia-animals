@@ -24,14 +24,14 @@
                            No tenemos ninguna de estas caracteristicas resgistradas, ¿podría indicarnos a que tipo pertenece?
                            <br/>
                            <input type="text" name="type" class="form-control"><br>
-                           <input type="hidden" name="cars" value="">
+                           <input type="hidden" name="cars" value="{{ $car }}">
                            <input type="submit" value="guardar">
-                          <a href="{{ url() }}">Volver</a>
-                        @endif   
-                        @if($res == 'ok')
+                          <a href="{{ url('') }}">Volver</a>
+                        @else
                         Coincidencias
-
-                          <a href="{{ url() }}">Volver</a>
+                            80% que es mamifero<br>
+                            80% que es un perro<br>
+                          <a href="{{ url('') }}">Volver</a>
                         @endif
                     </form>
                 </div>

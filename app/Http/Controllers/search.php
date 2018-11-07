@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\types;
 use App\caracteristics;
 use App\type_car;
+use App\palabras;
 
 
 class search extends Controller
@@ -35,7 +36,8 @@ class search extends Controller
 			}
 
 			return view('response',[
-				'res' => $response
+				'res' => $response,
+				'car' => $search
 			]);	
 		}
 		public function save(Request $request){
@@ -64,5 +66,14 @@ class search extends Controller
 
 			return view('responseend');
 		}
+
+		 public function SearchString (Request $request)
+      {   
+        if($request->search != null){
+          $search = palabras::ilike($request->search);
+          
+          return response()->json($search);
+              }
+        }
 
 }

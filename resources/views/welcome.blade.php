@@ -33,7 +33,7 @@
                                  var sea = document.getElementById('sea').value;
                                  if(sea == ''){
                                     document.getElementById("resp").innerHTML = " ";
-                                 }
+                                 }else{
                                            $.ajax({     
                                              type: "POST",                 
                                              url: "{{ url('search/SearchString') }}",  
@@ -52,6 +52,7 @@
                                             }
                                             
                                          });
+                                       }
 
                           });
                 </script>

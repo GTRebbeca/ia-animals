@@ -33,6 +33,7 @@
                                  var sea = document.getElementById('sea').value;
                                  if(sea == ''){
                                     document.getElementById("resp").innerHTML = " ";
+                                    document.getElementById("resp2").innerHTML = " ";
                                  }else{
                                            $.ajax({     
                                              type: "POST",                 

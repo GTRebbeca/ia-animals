@@ -31,6 +31,9 @@
                                         }
                                     });
                                  var sea = document.getElementById('sea').value;
+                                 if(sea == ''){
+                                    document.getElementById("resp").innerHTML = " ";
+                                 }
                                            $.ajax({     
                                              type: "POST",                 
                                              url: "{{ url('search/SearchString') }}",  

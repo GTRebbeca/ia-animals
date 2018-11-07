@@ -19,7 +19,7 @@
 
                 <div align="center">
                         <label style="color:black;">Ingrese palabra</label><br/>
-                       <input type="text" id="sea" class="form-control"><br/>
+                       <input type="text" id="sea" class="form-control"><div id="resp2" class="text-muted"></div><br/>
                        <div id="resp" class="text-muted"></div>
                 </div>
                 <script type="text/javascript">
@@ -49,6 +49,8 @@
                                             $('#resp').append('<div align="center"><b>'+ data[i]['palabra'] +'</b></div>');
                                                     }
                                                 } 
+
+                                                document.getElementById("resp2").innerHTML = "Probabilidad: " + 100 /data.length +"%";
                                             }
                                             
                                          });

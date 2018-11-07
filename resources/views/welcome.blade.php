@@ -20,7 +20,7 @@
                 <div align="center">
                         <label style="color:black;">Ingrese palabra</label><br/>
                        <input type="text" id="sea" class="form-control"><br/>
-                      <div id="resp" class="form-group text-muted"></div>
+                       <div id="resp" class="text-muted"></div>
                 </div>
                 <script type="text/javascript">
                     
@@ -46,7 +46,7 @@
                                              }else{
                                               document.getElementById("resp").innerHTML = "Coincidencias: ";
                                              for(var i= 0; i < data.length; i++){
-                                            $('#resp').append('<div style="margin-left:5%;"><b>'+ data[i]['palabra'] +'</b></div>');
+                                            $('#resp').append('<div align="center"><b>'+ data[i]['palabra'] +'</b></div>');
                                                     }
                                                 } 
                                             }

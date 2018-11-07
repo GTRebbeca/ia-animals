@@ -50,9 +50,8 @@
                                              for(var i= 0; i < data.length; i++){
                                             $('#resp').append('<div align="center"><b>'+ data[i]['palabra'] +'</b></div>');
                                                     }
+                                                 document.getElementById("resp2").innerHTML = "Probabilidad: " + 100 /data.length +"%";
                                                 } 
-
-                                                document.getElementById("resp2").innerHTML = "Probabilidad: " + 100 /data.length +"%";
                                             }
                                             
                                          });

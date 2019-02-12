@@ -162,7 +162,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Omniphx\Forrest\Providers\Laravel\ForrestServiceProvider::class,
+        omniphx\forrest\src\Omniphx\Forrest\Providers\Laravel\ForrestServiceProvider::class,
 
 
         /*
@@ -227,7 +227,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Forrest' => Omniphx\Forrest\Providers\Laravel\Facades\Forrest::class,
+        'Forrest' => omniphx\forrest\src\Omniphx\Forrest\Providers\Laravel\Facades\Forrest::class,
     ],
 
 ];

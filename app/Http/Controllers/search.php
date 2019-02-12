@@ -7,6 +7,9 @@ use App\types;
 use App\caracteristics;
 use App\type_car;
 use App\palabras;
+use spec\Omniphx\Forrest;
+use Carbon\Carbon;
+
 
 
 class search extends Controller
@@ -75,5 +78,10 @@ class search extends Controller
           return response()->json($search);
               }
         }
+
+    public function salesforceupdate(){
+
+
+    }    
 
 }

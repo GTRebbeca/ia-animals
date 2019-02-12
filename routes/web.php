@@ -14,6 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function()
+{
+    $loginURL = 'https://mycomponentqr-dev-ed.lightning.force.com';
+
+    return Forrest::authenticate($loginURL);
+});
 Route::group(['prefix' => 'search'], function(){
 
 	Route::post('index', [

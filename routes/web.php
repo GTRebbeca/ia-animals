@@ -15,6 +15,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/authenticate', function()
+{
+    return Forrest::authenticate();
+});
+
+Route::get('/callback', function()
+{
+    Forrest::callback();
+
+    return Redirect::to('/');
+});
 
 Route::get('/test', function()
 {
